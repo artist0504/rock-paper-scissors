@@ -33,21 +33,32 @@
         </header>
 
         <main>
+            <!--Scoreboard-->
             <section>
                 <h2>Scoreboard</h2>
                 <p class="scoreboard">
                     wins:
                     <span id="win-display"></span>
                     losses:
-                    <span id="win-display"></span>
+                    <span id="losses-display"></span>
                     draw:
-                    <span id="win-display"></span>
+                    <span id="draw-display"></span>
                 </p>
             </section>
 
+            <!--Make your pick-->
             <section>
                 <h2>Pick One</h2>
-                <button class="rps-pick" id="rock-pick">✊<br />Rock</button>
+                <button class="rps-pick" id="rock-pick">✊<br /><br />Rock</button>
+                <button class="rps-pick" id="paper-pick">✋<br /><br />Paper</button>
+                <button class="rps-pick" id="scissors-pick">✌ <br /><br />Scissors</button>
+            </section>
+
+            <!--Results-->
+            <section id="results-section">
+                <h2>Shoot!</h2>
+                <p id="rock-display">✊</p>
+                <button id="play-again-button">Play Again</button>
             </section>
         </main>
     </body>

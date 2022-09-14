@@ -22,4 +22,59 @@ header {
 
 main {
     padding: 20px;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.scoreboard span {
+    font-weight: bold;
+}
+
+.rps-pick {
+    height: 120px;
+    width: 120px;
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+    font-size: 24px;
+}
+
+.rps-pick:hover {
+    box-shadow: rgba(0, 0, 0, 0.23);
+}
+
+#rock-display {
+    font-size: 24px;
+}
+
+.rps-pick.rock-pick {
+    background: rgb(164, 2, 2);
+}
+
+.rps-pick.paper-pick {
+    background: rgb(164, 2, 2);
+}
+
+.rps-pick.scissors-pick {
+    background: rgb(164, 2, 2);
+}
+
+.hidden {
+    display: none;
+}
+
+#results-display {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.fade-out {
+    opacity: 0;
 }

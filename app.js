@@ -12,7 +12,7 @@ let losses = 0;
 
 /* Actions */
 function loadPage() {
-    displayPicks();
+    displayPick();
     displayResults();
     displayScoreboard();
 }
@@ -64,6 +64,37 @@ const pickPaper = document.getElementById('paper-pick');
 const pickScissors = document.getElementById('scissors-pick');
 
 // display
+function displayPick() {
+    if (pick === 'rock') {
+        pickRock.classList.remove('win', 'lose', 'fade-out');
+        pickPaper.classList.remove('win', 'lose', 'fade-out');
+        pickScissors.classList.remove('win', 'lose', 'fade-out');
+
+        if (gameState === 'results') {
+            if (pick === 'rock')
+            pickRock.classList.add('fade-out');
+            pickPaper.classList.add(result);
+            pickScissors.classList.add(result);
+        }
+        else {
+            pickPaper.classList.add('fade-out');
+            pickScissors.classList.add(result);
+            pickRock.classList.add(result);
+        }
+        else {
+            pickScissors.classList.add('fade-out');
+            pickRock.classList.add(result);
+            pickPaper.classList.add(result);
+        }
+    // Draw
+        else if {
+            pickRock.classList.add(result);
+            pickPaper.classList.add(result);
+            pickScissors.classList.add(result);
+        }
+    }
+}
+
 // event listeners
 pickRock.addEventListener('click', () => {
     makePick('rock');
